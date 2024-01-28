@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Icon } from '../../icon.interface';
+import { Icons } from '../../constants';
 
 @Component({
   selector: 'app-icons-list',
@@ -9,5 +10,5 @@ import { Icon } from '../../icon.interface';
   styleUrl: './icons-list.component.sass',
 })
 export class IconsListComponent {
-  
+  icons: Icon[] = Icons;
 }
