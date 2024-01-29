@@ -10,8 +10,5 @@ import { Icon } from '../../icon.interface';
   styleUrl: './icon-card.component.sass'
 })
 export class IconCardComponent {
-  @Input() icon: Icon = {
-    name: "search",
-    identifier: "search"
-  };
+  @Input() icon!: Icon; 
 }

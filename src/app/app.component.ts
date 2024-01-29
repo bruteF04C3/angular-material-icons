@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { IconsListComponent } from './components/icons-list/icons-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [IconsListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
