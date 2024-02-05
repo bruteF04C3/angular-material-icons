@@ -1,1 +1,10 @@
-@import "../styles/partials/spacing.scss";
+@import "../styles/partials/spacing";
+@import "../styles/partials/variables";
+
+.w-50 {
+    width: 50%;
+}
+
+.m-auto{
+    margin: 0 auto;
+}
