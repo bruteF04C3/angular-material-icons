@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Signal, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormField } from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
@@ -11,5 +11,9 @@ import { MatIcon } from '@angular/material/icon';
   styleUrl: './search.component.scss',
 })
 export class SearchComponent {
-  searchQuery: string = '';
+  $searchQuery = signal('');
+
+  onSearchUpdated(sq: string) {
+    console.log(sq);
+  }
 }
