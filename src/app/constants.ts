@@ -1190,3 +1190,5 @@ export const Icons: Icon[] = [
   { name: 'folder off', identifier: 'folder_off' },
   { name: 'format overline', identifier: 'format_overline' },
 ];
+
+export const WELCOME_MESSAGE = "Find your desired angular material icons";

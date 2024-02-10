@@ -1,11 +1,12 @@
 @import "../styles/partials/spacing";
 @import "../styles/partials/variables";
 @import "../styles//partials/spacing";
+@import "../styles/partials/layout";
+@import "../styles/partials/typography";
 
-.w-50 {
-    width: 50%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.m-auto{
-    margin: 0 auto;
-}
