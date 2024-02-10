@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Signal, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormField } from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
 import { MatIcon } from '@angular/material/icon';
+import { BehaviorSubject } from 'rxjs';
+import { DataService } from '../../data.service';
 @Component({
   selector: 'app-search',
   standalone: true,
@@ -11,5 +13,12 @@ import { MatIcon } from '@angular/material/icon';
   styleUrl: './search.component.scss',
 })
 export class SearchComponent {
-  searchQuery: string = '';
+
+  constructor(
+    private dataService: DataService
+  ){}
+
+  onSearchUpdated(sq: string) {
+    this.dataService.onSearchUpdated(sq);
+  }
 }
