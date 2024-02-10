@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { IconsListComponent } from './components/icons-list/icons-list.component';
-import { SearchComponent } from './components/search/search.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [IconsListComponent, SearchComponent],
+  imports: [RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
