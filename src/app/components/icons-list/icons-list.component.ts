@@ -14,7 +14,7 @@ import { Util } from '../../util';
 })
 export class IconsListComponent implements OnInit {
   icons: Icon[] = Icons;
-  filteredIcons: Icon[] = [];
+  filteredIcons: Icon[] = Icons;
 
   constructor(private dataService: DataService) {}
 
