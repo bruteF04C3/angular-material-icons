@@ -1,23 +1,14 @@
-.mb-rem1 {
-  margin-bottom: 1rem;
-}
+@use "./mixins";
+@use "./variables";
 
-.m-auto {
+.m-auto{
   margin: 0 auto;
 }
 
+.m-10{
+  
+}
+
 .w-50 {
-  width: 50%;
-}
-
-.h-100 {
-    height: 100vh;
-}
-
-.w-100 {
-    width: 100vw;
-}
-
-.h-14p {
-    height: 14px! important;
+  @include mixins.getWidth($width: 50, $unit: variables.$unit-rem);
 }
