@@ -1,7 +1,0 @@
-@mixin getWidth($width: 10, $unit: px) {
-    width: $width + $unit;
-}
-
-@mixin getHeight($height: 10, $unit: px) {
-    height: $size + $unit;
-}
