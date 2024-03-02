@@ -32,7 +32,13 @@ export class LandingComponent implements OnDestroy {
     'lock',
   ];
 
-  displayedIcons: string[] = [];
+  displayedIcons: string[] = [
+    'search',
+    'home',
+    'account_circle',
+    'settings',
+    'done',
+  ];
   interval: any;
 
   constructor() {
