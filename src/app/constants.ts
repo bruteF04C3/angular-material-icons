@@ -1192,4 +1192,4 @@ export const Icons: Icon[] = [
 ];
 
 export const WELCOME_MESSAGE = "Find your desired angular material icons";
-export const SHOW_ENTIRE_LIST = "See entire list";
+export const SHOW_ENTIRE_LIST = "See the entire list";

@@ -1,10 +1,15 @@
-<div class="h-100 w-100 d-flex justify-center align-center">
-    <div>
-        <h1 class="fs-40 fw-500">
+<div class="page h-full flex justify-center items-center">
+    <div class="page-content">
+        <div class="flex items-center justify-evenly animate-pulse m-4">
+            @for(icon of displayedIcons; track icon) {
+            <mat-icon>{{ icon }}</mat-icon>
+            }
+        </div>
+        <h1 class="text-4xl m-4">
             {{ welcomeMessage }}
         </h1>
-        <a routerLink="/icons" class="fw-100 internal__link" target="_self">
-            {{ entireListMessage }}
-        </a>
+        <p class="text-center">
+            <app-button [label]="entireListMessage" [redirectedTo]="'icons'"></app-button>
+        </p>
     </div>
 </div>
