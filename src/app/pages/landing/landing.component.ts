@@ -14,31 +14,7 @@ import { ButtonComponent } from '../../components/button/button.component';
 export class LandingComponent implements OnDestroy {
   welcomeMessage: string = WELCOME_MESSAGE;
   entireListMessage: string = SHOW_ENTIRE_LIST;
-  icons: any[] = [
-    'search',
-    'home',
-    'account_circle',
-    'settings',
-    'done',
-    'info',
-    'check_circle',
-    'delete',
-    'shopping_cart',
-    'visibility',
-    'favorite',
-    'logout',
-    'description',
-    'favorite_border',
-    'lock',
-  ];
-
-  displayedIcons: string[] = [
-    'search',
-    'home',
-    'account_circle',
-    'settings',
-    'done',
-  ];
+  icons: any[] = ['search', 'home', 'account_circle', 'settings', 'done'];
   interval: any;
 
   constructor() {
@@ -55,7 +31,7 @@ export class LandingComponent implements OnDestroy {
     const shuffledIcons = this.icons
       .sort(() => Math.random() - 0.5)
       .slice(0, 5);
-    this.displayedIcons = shuffledIcons;
+    this.icons = shuffledIcons;
   }
 
   ngOnDestroy() {
