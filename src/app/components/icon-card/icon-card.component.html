@@ -1,7 +1,10 @@
 <mat-card class="mb-4 break-inside-avoid" appearance="outlined">
     <mat-card-content>
-        <mat-icon> {{ icon.identifier }} </mat-icon>
-        <p class="truncate">
+        <div class="flex justify-between">
+            <mat-icon> {{ icon.identifier }} </mat-icon>
+            <mat-icon (click)="copyIcon()" [cdkCopyToClipboard]="icon.identifier" class="cursor-pointer"> {{ copyStatusIcon }} </mat-icon>
+        </div>
+        <p class="truncate my-4">
             {{ icon.name }}
         </p>
     </mat-card-content>
